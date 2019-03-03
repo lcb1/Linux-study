@@ -1,0 +1,25 @@
+.vim vim配置目录
+.vim/autoload 自动管理vim插件的关键文件夹
+.vim/autoload/pathogen.vim vim配置文件
+.vim/bundle vim插件的存放文件夹。pathogen会对其中的插件自动管理
+-------------------
+.vimrc vim配置文件
+--------------------
+
+详细步骤：
+cd
+mkdir .vim
+touch .vimrc
+vim .vimrc
+  ------
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+  -------
+  mkdir .vim/bundle
+  cd .vim/bundle
+  git clone https://github.com/tpope/vim-pathogen.git
+  cp -r vim-pathogen/autoload ~/.vim
+  
+  
+  
