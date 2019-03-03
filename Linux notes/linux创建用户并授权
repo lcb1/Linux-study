@@ -1,0 +1,10 @@
+adduser username
+passwd username
+chmod u+w etc/sudoers
+vim /etc/sudoers
+最后面加上
+username ALL=(ALL) ALL
+chmod u-w etc/sudoers
+--------------------------
+修改sudoers文件目的：
+使用户具有sudo 使用root权限
