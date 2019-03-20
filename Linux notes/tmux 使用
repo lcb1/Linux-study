@@ -1,0 +1,16 @@
+yum install tmux -y ---------安装tmux
+tmux new -s name ------------新建一个tmux会话
+tmux a -t name---------------选择一个tmux会话
+tmux kill-session -t name----杀死一个tmux会话
+tmux attach------------------进入上一个tmux会话
+tmux ls    ------------------列出当前所有tmux会话
+
+---------------ctrl+b 进入tmux会话后的快捷键
+c     创建一个窗口
+x      杀死一个窗口或面板
+w       列出当前所有窗口
+&       杀死一个会话
+s       列出当前所有会话
+"       横向分屏
+%       水平分屏
+:       进入命令模式
