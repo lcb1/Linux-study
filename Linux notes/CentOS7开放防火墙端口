@@ -1,0 +1,5 @@
+systemctl status firewalld.service             --查看防火墙是否开启
+
+firewall-cmd --query-port=portid/{tcp,udp,dccp,sctp}             ---查看端口是否开启
+
+firewall-cmd --add-port=portid/{tcp,udp,dccp,sctp} --permanent       --增加开放的端口
