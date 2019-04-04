@@ -1,0 +1,12 @@
+删除openjdk
+rpm -qa |rep java
+
+javapackages-tools-3.4.1-11.el7.noarch
+java-1.8.0-openjdk-1.8.0.181-7.b13.el7.x86_64
+python-javapackages-3.4.1-11.el7.noarch
+java-1.8.0-openjdk-headless-1.8.0.181-7.b13.el7.x86_64
+tzdata-java-2018e-3.el7.noarch
+
+rpm -e --nodeps java-1.8.0-openjdk-1.8.0.181-7.b13.el7.x86_64
+....
+删除java开头的包
